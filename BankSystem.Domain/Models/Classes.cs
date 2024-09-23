@@ -27,13 +27,16 @@ namespace BankSystem.Domain.Models
         public string Position { get; set; }
         public decimal Salary { get; set; }
         public string Contract { get; set; }
+        public bool IsOwner {  get; set; }
+        public static int ownerCount = 0; //Общий счетчик владельцев для класса
 
-        public Employee(string name, int age, string position, decimal salary, string contract = "")
+        public Employee(string name, int age, string position, decimal salary, bool isowner, string contract = "")
             : base(name, age)
         {
             Position = position;
             Salary = salary;
             Contract = contract;
+            IsOwner = isowner;
         }
 
         public override void DisplayInfo()

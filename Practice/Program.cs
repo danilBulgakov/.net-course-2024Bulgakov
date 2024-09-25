@@ -28,7 +28,7 @@ namespace Practice
             BankService bankService = new BankService();
 
             // Пример списка сотрудников
-            Employee employees = new("Alice", 30, "Developer", 75000, false, "");
+            Employee employees = new("Alice", 30, "Developer", 75000, true, "");
 
             // Пример расчета зарплаты владельцев банка
             BankService.profit = 1000000m;  // Прибыль банка

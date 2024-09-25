@@ -9,8 +9,8 @@ namespace BankSystem.App.Services
 {
     public class BankService
     {
-        public static decimal profit { get; set;} //Банк один, поэтому переменная статичная
-        public static decimal expenses {  get; set; } //Банк один, поэтому переменная статичная
+        public static decimal profit { get; set;} //Банк один, поэтому переменная глобальная
+        public static decimal expenses {  get; set; }//Банк один, поэтому переменная глобальная
         // Метод расчета зарплаты владельцев банка
         public static int CalculateOwnerSalary(decimal profit, decimal expenses, int ownerCount)
         {
